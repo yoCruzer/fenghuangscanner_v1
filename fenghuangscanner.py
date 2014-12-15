@@ -317,7 +317,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='ports&*weak password scanner. teams:t00ls&&xdsec.  author: wilson ')
     parser.add_argument('--ip',action="store",required=True,dest="ip",type=str,help='ip like 192.168.1.1-254')
     parser.add_argument('--f',action="store",required=True,dest="path",type=str,help='get you results in this file')
-    parser.add_argument("--threads",action="store",required=False,dest="threads",type=int,default=50,help='Maximum threads, default 50')
+    parser.add_argument("--threads",action="store",required=False,dest="threads",type=int,default=20,help='Maximum threads, default 20')
     parser.add_argument("--P",action="store",required=False,dest="isping",type=str,default='yes',help='--P not mean no ping frist,default yes')
 
     args = parser.parse_args()

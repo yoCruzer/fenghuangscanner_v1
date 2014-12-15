@@ -1,4 +1,4 @@
-﻿#coding=utf-8
+#coding=utf-8
 __author__ = 'wilson'
 import ctypes,sys
 import argparse
@@ -25,7 +25,7 @@ from telnet import telnet_main
 import _mssql
 import uuid
 
-socket.setdefaulttimeout(5)  #设置了全局默认超时时间
+socket.setdefaulttimeout(10)  #设置了全局默认超时时间
 #变量定义
 posts=[21,22,23,25,53,80,81,110,135,139,389,443,445,873,1043,1433,1434,1521,3306,3307,3389,4848,5800,5900,8080,8090,22022,22222,27017,28017]
 PROBES=[
@@ -137,6 +137,7 @@ SIGNS=[
     'mysql|^\(\x00\x00',
     'mysql|this MySQL',
     'mysql|^N\x00',
+    'mysql|(.*)mysql(.*)',
     'mssql|;MSSQLSERVER;',
     'mongodb|^.*version.....([\.\d]+)',
     'nagiosd|Sorry, you \(.*are not among the allowed hosts...',
@@ -317,7 +318,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='ports&*weak password scanner. teams:t00ls&&xdsec.  author: wilson ')
     parser.add_argument('--ip',action="store",required=True,dest="ip",type=str,help='ip like 192.168.1.1-254')
     parser.add_argument('--f',action="store",required=True,dest="path",type=str,help='get you results in this file')
-    parser.add_argument("--threads",action="store",required=False,dest="threads",type=int,default=20,help='Maximum threads, default 20')
+    parser.add_argument("--threads",action="store",required=False,dest="threads",type=int,default=50,help='Maximum threads, default 50')
     parser.add_argument("--P",action="store",required=False,dest="isping",type=str,default='yes',help='--P not mean no ping frist,default yes')
 
     args = parser.parse_args()

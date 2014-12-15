@@ -30,7 +30,6 @@ def mssql_connect(ip,username,password,port):
         db=pymssql.connect(server=ip,port=port,user=username,password=password)
         if db:
             crack=1
-        db.close()
     except Exception, e:
         lock.acquire()
         print "%s sql service 's %s:%s login fail " %(ip,username,password)

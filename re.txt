@@ -1,0 +1,108 @@
+ftp service has:
+       ['192.168.6.130:21']
+http service has:
+       ['192.168.6.131:443', '192.168.6.131:80', '192.168.6.130:80', '192.168.6.1:80']
+telnet service has:
+       ['192.168.6.131:23']
+ssl service has:
+       ['192.168.6.1:443']
+ssh service has:
+       ['192.168.6.131:22']
+mysql service has:
+       ['192.168.6.131:3306', '192.168.6.130:3306', '192.168.6.1:3306']
+msrdp service has:
+       ['192.168.6.130:3389']
+smb service has:
+       ['192.168.6.1:445', '192.168.6.130:445']
+netbios service has:
+       ['192.168.6.1:139', '192.168.6.130:139', '192.168.6.1:135', '192.168.6.130:135']
+
+weaken password:
+192.168.6.131 ssh service at 22 has weaken password!!-------root:root
+192.168.6.130 smb at 445 has weaken password!!-------administrator:1
+ftp service has:
+       ['192.168.6.135:21']
+http service has:
+       ['192.168.6.131:80', '192.168.6.131:443', '192.168.6.135:80', '192.168.6.1:80']
+telnet service has:
+       ['192.168.6.131:23']
+mssql service has:
+       ['192.168.6.135:1043']
+ssl service has:
+       ['192.168.6.1:443']
+ssh service has:
+       ['192.168.6.131:22']
+mysql service has:
+       ['192.168.6.1:3306', '192.168.6.131:3306', '192.168.6.135:3306']
+smb service has:
+       ['192.168.6.1:445', '192.168.6.135:445']
+netbios service has:
+       ['192.168.6.1:139', '192.168.6.135:139', '192.168.6.1:135', '192.168.6.135:135']
+
+weaken password:
+192.168.6.135 sql service at 1043 has weaken password!!-------sa:aS6kR9auNM
+192.168.6.135 smb at 445 has weaken password!!-------administrator:1
+ftp service has:
+       ['192.168.6.135:21']
+http service has:
+       ['192.168.6.135:80', '192.168.6.131:80', '192.168.6.131:443', '192.168.6.1:80']
+telnet service has:
+       ['192.168.6.131:23']
+mssql service has:
+       ['192.168.6.135:1043']
+ssl service has:
+       ['192.168.6.1:443']
+ssh service has:
+       ['192.168.6.131:22']
+mysql service has:
+       ['192.168.6.135:3306', '192.168.6.1:3306', '192.168.6.131:3306']
+smb service has:
+       ['192.168.6.135:445', '192.168.6.1:445']
+netbios service has:
+       ['192.168.6.1:139', '192.168.6.135:139', '192.168.6.1:135', '192.168.6.135:135']
+
+weaken password:
+192.168.6.135 sql service at 1043 has weaken password!!-------sa:aS6kR9auNM
+192.168.6.135 smb at 445 has weaken password!!-------administrator:1
+ftp service has:
+       ['192.168.6.135:21']
+http service has:
+       ['192.168.6.131:80', '192.168.6.131:443', '192.168.6.135:80', '192.168.6.1:80']
+telnet service has:
+       ['192.168.6.131:23']
+mssql service has:
+       ['192.168.6.135:1043']
+ssl service has:
+       ['192.168.6.1:443']
+ssh service has:
+       ['192.168.6.131:22']
+mysql service has:
+       ['192.168.6.1:3306', '192.168.6.131:3306', '192.168.6.135:3306']
+smb service has:
+       ['192.168.6.1:445', '192.168.6.135:445']
+netbios service has:
+       ['192.168.6.1:139', '192.168.6.135:139', '192.168.6.1:135', '192.168.6.135:135']
+
+weaken password:
+ftp service has:
+       ['192.168.6.135:21']
+http service has:
+       ['192.168.6.131:80', '192.168.6.131:443', '192.168.6.135:80', '192.168.6.1:80']
+telnet service has:
+       ['192.168.6.131:23']
+mssql service has:
+       ['192.168.6.135:1043']
+ssl service has:
+       ['192.168.6.1:443']
+ssh service has:
+       ['192.168.6.131:22']
+mysql service has:
+       ['192.168.6.1:3306', '192.168.6.131:3306', '192.168.6.135:3306']
+smb service has:
+       ['192.168.6.1:445', '192.168.6.135:445']
+netbios service has:
+       ['192.168.6.1:139', '192.168.6.135:139', '192.168.6.1:135', '192.168.6.135:135']
+
+weaken password:
+192.168.6.135 sql service at 1043 has weaken password!!-------sa:aS6kR9auNM
+192.168.6.135 smb at 445 has weaken password!!-------administrator:1

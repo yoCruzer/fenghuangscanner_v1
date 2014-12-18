@@ -49,35 +49,6 @@ def ssh():
         usernames=file2list('ssh_user.txt')
         passwords=file2list('ssh_pass.txt')
         for username in usernames:
-            if ssh_connect(ip,username,username,port)==1:
-                lock.acquire()
-                printGreen("%s ssh service at %s has weaken password!!-------%s:%s\r\n" %(ip,port,username,username))
-                result.append("%s ssh service at %s has weaken password!!-------%s:%s\r\n" %(ip,port,username,username))
-                lock.release()
-                break
-
-            if ssh_connect(ip,username,username+'123',port)==1:
-                    lock.acquire()
-                    printGreen("%s ssh service at %s has weaken password!!-------%s:%s\r\n" %(ip,port,username,username+'123'))
-                    result.append("%s ssh service at %s has weaken password!!-------%s:%s\r\n" %(ip,port,username,username+'123'))
-                    lock.release()
-                    break
-            if ssh_connect(ip,username,username+'123456',port)==1:
-                    lock.acquire()
-                    printGreen("%s ssh service at %s has weaken password!!-------%s:%s\r\n" %(ip,port,username,username+'123456'))
-                    result.append("%s ssh service at %s has weaken password!!-------%s:%s\r\n" %(ip,port,username,username+'123456'))
-                    lock.release()
-                    break
-            if ssh_connect(ip,username,'',port)==1:
-                    lock.acquire()
-                    printGreen("%s ssh service at %s has weaken password!!-------%s:%s\r\n" %(ip,port,username,''))
-                    result.append("%s ssh service at %s has weaken password!!-------%s:%s\r\n" %(ip,port,username,''))
-                    lock.release()
-                    break
-
-
-
-
             for password in passwords:
                 if ssh_connect(ip,username,password,port)==1:
                         lock.acquire()
